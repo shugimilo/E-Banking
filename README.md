@@ -18,19 +18,30 @@ This project models the core logic of a digital banking application. It simulate
 
 - **Python 3**
 - **OOP principles**
-- **Datetime handling**
-- **Modular structure (classes for each entity)**
+- **MySQL**
+- **MVC-like approach**
+
+## Implementation
+
+- Database created in MySQL
+- mysql-connector-python is used to connect the app with the database
+- Tkinter is used for the GUI
+- pillow (PIL) is used for credit card customization
 
 ## Structure
 
-- `account.py`: Core class representing user accounts and coordinating actions.
-- `utils/fetcher.py`: Simulates data fetching from a database.
-- `utils/etcher.py`: Simulates data modification/writing.
-- `creditcard.py`, `bill.py`, `saving.py`, etc.: Data models for financial entities.
+- `card_templates/`: Contains images of blank Visa, MasterCard and Dina cards, which fills out with user's information in a layout mirroring real-world cards.
+- `classes/`: Contains classes that represent entities.
+- `gui/`: Contains interactable widgets that show up on the screen.
+- `utils/`: Contains the database class, along with the fetcher and etcher classes used for retrieving and storing data.
+- `main.py`: The entry point of the application.
 
-## Usage
+## Basic Explanation
 
-This is a logic-layer module designed to be integrated into a broader application (e.g., with a frontend or database). Each class is self-contained and easily testable.
+After a successful sign in, the user is brought to the main menu, which shows useful information about their credit card/account. If the user has multiple bank accounts, they can navigate using the left/right arrow to switch between them.
+Each bank account has a credit card and bills, payments, savings, exchanges and money transfers associated with it.
+By interacting with the grid menu, the user can explore different services - viewing past payments, paying bills, creating, adding and withdrawing from savings etc.
+If a service is interacted with, it will open as a pop-up window and store any changes directly in the database, refreshing the entire app instantaneously.
 
 ## Note
 
