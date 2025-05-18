@@ -10,7 +10,7 @@ This project models the core logic of a digital banking application. It simulate
 - **Credit Cards**: Links and validates card data for payments.
 - **Bills & Payments**: Supports bill assignment, payment tracking, and transaction logging.
 - **Savings Goals**: Tracks progress toward saving objectives.
-- **Money Transfers**: Enables domestic transfers between accounts.
+- **Money Transfers**: Enables domestic and foreign transfers between accounts.
 - **Currency Exchange**: Supports buying/selling foreign currency using exchange rates.
 - **Persistence Layer**: Interacts with mocked fetcher and etcher utilities simulating data retrieval and updates.
 
@@ -42,6 +42,12 @@ After a successful sign in, the user is brought to the main menu, which shows us
 Each bank account has a credit card and bills, payments, savings, exchanges and money transfers associated with it.
 By interacting with the grid menu, the user can explore different services - viewing past payments, paying bills, creating, adding and withdrawing from savings etc.
 If a service is interacted with, it will open as a pop-up window and store any changes directly in the database, refreshing the entire app instantaneously.
+
+Implemented rigorous checking for logic errors (e.g. user wants increase saving by an amount exceeding current balance) and incomplete form sending.
+
+## Quick Demonstration
+
+![image](https://i.imgur.com/igeYo3S.gif)
 
 ## Note
 
