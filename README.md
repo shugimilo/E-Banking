@@ -47,7 +47,7 @@ Implemented rigorous checking for logic errors (e.g. user wants increase saving 
 
 ## Quick Demonstration
 
-![image](https://i.imgur.com/igeYo3S.gif)
+![image](https://i.imgur.com/a4lFpoe.gif)
 
 ## Note
 
