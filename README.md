@@ -51,7 +51,7 @@ e-banking-app/
 ## How It Works
 
 - After signing in, the user is presented with a dashboard displaying account and credit card details.
-- If multiple accounts exist, the user can switch between them using left/right arrow keys.
+- If multiple accounts exist, the user can switch between them using left/right arrow buttons.
 - A grid-based menu provides access to core services like:
   - Viewing and paying bills
   - Managing savings
