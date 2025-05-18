@@ -8,7 +8,7 @@ This project models the core logic of a digital banking application. It simulate
 
 - **Account Management**: Handles user accounts, balances, and currency.
 - **Credit Cards**: Links and validates card data for payments.
-- **Bills & Payments**: Supports bill assignment, payment tracking, and transaction logging.
+- **Bills & Payments**: Supports bill, payment tracking, and transaction logging.
 - **Savings Goals**: Tracks progress toward saving objectives.
 - **Money Transfers**: Enables domestic and foreign transfers between accounts.
 - **Currency Exchange**: Supports buying/selling foreign currency using exchange rates.
