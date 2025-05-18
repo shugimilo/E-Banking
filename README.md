@@ -73,20 +73,32 @@ e-banking-app/
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/shugimilo/E-Banking.git
-cd e-banking-app
+d e-banking-app
+```
 
 ### 2. (Recommended) Create a Virtual Environment
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 ### 3. Install Requirements
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Import the Database
 Import the provided .sql database dump into your local MySQL server (localhost). You can use MySQL Workbench, phpMyAdmin, or the CLI:
+```bash
 mysql -u your_username -p your_database_name < path/to/database_file.sql
+```
 **Note**: Ensure your database credentials in the app match your MySQL configuration.
 
 ### 5. Run the App
+```bash
 python main.py
+```
+
+---
