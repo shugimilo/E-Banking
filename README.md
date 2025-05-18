@@ -40,11 +40,11 @@ Developed during the third year of studies as part of the *Software Engineering*
 
 e-banking-app/
 - │
-- ├── card_templates/ # Blank templates for Visa, MasterCard, Dina cards
-- ├── classes/ # Core logic and entity classes (Account, Bill, etc.)
-- ├── gui/ # GUI components and widgets
-- ├── utils/ # Database connection + data fetching/writing utilities
-- └── main.py # Entry point for the application
+- ├── card_templates/ *Blank templates for Visa, MasterCard, Dina cards*
+- ├── classes/ *Core logic and entity classes (Account, Bill, etc.)*
+- ├── gui/ *GUI components and widgets*
+- ├── utils/ *Database connection + data fetching/writing utilities*
+- └── main.py *Entry point for the application*
 
 ---
 
