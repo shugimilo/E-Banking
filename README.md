@@ -20,7 +20,7 @@ Developed during the third year of studies as part of the *Software Engineering*
 
 ## Technologies Used
 
-- **Python 3**
+- **Python 3.12**
 - **OOP principles**
 - **MySQL** (for persistent storage)
 - **MVC-inspired architecture**
@@ -39,12 +39,12 @@ Developed during the third year of studies as part of the *Software Engineering*
 ## Project Structure
 
 e-banking-app/
-│
-├── card_templates/ # Blank templates for Visa, MasterCard, Dina cards
-├── classes/ # Core logic and entity classes (Account, Bill, etc.)
-├── gui/ # GUI components and widgets
-├── utils/ # Database connection + data fetching/writing utilities
-└── main.py # Entry point for the application
+- │
+- ├── card_templates/ # Blank templates for Visa, MasterCard, Dina cards
+- ├── classes/ # Core logic and entity classes (Account, Bill, etc.)
+- ├── gui/ # GUI components and widgets
+- ├── utils/ # Database connection + data fetching/writing utilities
+- └── main.py # Entry point for the application
 
 ---
 
