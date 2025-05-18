@@ -1,57 +1,92 @@
 # E-Banking App
 
-Basic E-Banking App with GUI built in Python and MySQL
-Made during the third year of studies, as part of the course of Software Engineering.
-This project models the core logic of a digital banking application. It simulates real-world banking heavily based on existing apps and operations using Python classes to manage accounts, transactions, payments, and foreign exchange.
+A basic digital banking app with a GUI, built using Python and MySQL.
 
-## Features
-
-- **Account Management**: Handles user accounts, balances, and currency.
-- **Credit Cards**: Links and validates card data for payments.
-- **Bills & Payments**: Supports bill, payment tracking, and transaction logging.
-- **Savings Goals**: Tracks progress toward saving objectives.
-- **Money Transfers**: Enables domestic and foreign transfers between accounts.
-- **Currency Exchange**: Supports buying/selling foreign currency using exchange rates.
-- **Persistence Layer**: Interacts with mocked fetcher and etcher utilities simulating data retrieval and updates.
-
-## Technologies
-
-- **Python 3**
-- **OOP principles**
-- **MySQL**
-- **MVC-like approach**
-
-## Implementation
-
-- Database created in MySQL
-- mysql-connector-python is used to connect the app with the database
-- Tkinter is used for the GUI
-- pillow (PIL) is used for credit card customization
-
-## Structure
-
-- `card_templates/`: Contains images of blank Visa, MasterCard and Dina cards, which fills out with user's information in a layout mirroring real-world cards.
-- `classes/`: Contains classes that represent entities.
-- `gui/`: Contains interactable widgets that show up on the screen.
-- `utils/`: Contains the database class, along with the fetcher and etcher classes used for retrieving and storing data.
-- `main.py`: The entry point of the application.
-
-## Basic Explanation
-
-After a successful sign in, the user is brought to the main menu, which shows useful information about their credit card/account. If the user has multiple bank accounts, they can navigate using the left/right arrow to switch between them.
-Each bank account has a credit card and bills, payments, savings, exchanges and money transfers associated with it.
-By interacting with the grid menu, the user can explore different services - viewing past payments, paying bills, creating, adding and withdrawing from savings etc.
-If a service is interacted with, it will open as a pop-up window and store any changes directly in the database, refreshing the entire app instantaneously.
-
-Implemented rigorous checking for logic errors (e.g. user wants increase saving by an amount exceeding current balance) and incomplete form sending.
-
-## Quick Demonstration
-
-![image](https://i.imgur.com/a4lFpoe.gif)
-
-## Note
-
-This project was built as part of a university assignment and showcases practical use of object-oriented design in simulating financial systems. It was completed before taking advanced software engineering courses. It reflects self-taught design choices and practical experimentation with object-oriented concepts.
+Developed during the third year of studies as part of the *Software Engineering* course, this project models the core logic of an e-banking system. It simulates real-world banking operations, inspired by existing apps, using Python classes to manage accounts, transactions, payments, savings, and currency exchange.
 
 ---
 
+## Features
+
+- **Account Management**: Manages user accounts, balances, and currency data.
+- **Credit Cards**: Links and validates card information for payments.
+- **Bills & Payments**: Supports bill tracking, payments, and transaction logging.
+- **Savings Goals**: Tracks user-defined savings objectives.
+- **Money Transfers**: Enables both domestic and foreign transfers between accounts.
+- **Currency Exchange**: Allows buying/selling of foreign currencies using exchange rates.
+- **Persistence Layer**: Simulates data retrieval and updates using mocked fetcher and etcher utilities.
+
+---
+
+## Technologies Used
+
+- **Python 3**
+- **OOP principles**
+- **MySQL** (for persistent storage)
+- **MVC-inspired architecture**
+
+---
+
+## Implementation Highlights
+
+- **Database**: Designed in MySQL with normalized tables.
+- **Connector**: `mysql-connector-python` used for database interactions.
+- **GUI**: Built with `tkinter`.
+- **Image Generation**: `Pillow` (PIL) used to generate custom credit card visuals.
+
+---
+
+## Project Structure
+
+e-banking-app/
+│
+├── card_templates/ # Blank templates for Visa, MasterCard, Dina cards
+├── classes/ # Core logic and entity classes (Account, Bill, etc.)
+├── gui/ # GUI components and widgets
+├── utils/ # Database connection + data fetching/writing utilities
+└── main.py # Entry point for the application
+
+---
+
+## How It Works
+
+- After signing in, the user is presented with a dashboard displaying account and credit card details.
+- If multiple accounts exist, the user can switch between them using left/right arrow keys.
+- A grid-based menu provides access to core services like:
+  - Viewing and paying bills
+  - Managing savings
+  - Making transfers
+  - Viewing past transactions
+  - Checking and using exchange rates
+- Each service opens in a separate pop-up window and commits changes directly to the MySQL database, with real-time UI refresh.
+- Rigorous validation is in place to prevent logical errors (e.g., overspending) and incomplete form submissions.
+
+---
+
+## Quick Demonstration
+
+![Demo](https://i.imgur.com/a4lFpoe.gif)
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+git clone https://github.com/shugimilo/E-Banking.git
+cd e-banking-app
+
+### 2. (Recommended) Create a Virtual Environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+### 3. Install Requirements
+pip install -r requirements.txt
+
+### 4. Import the Database
+Import the provided .sql database dump into your local MySQL server (localhost). You can use MySQL Workbench, phpMyAdmin, or the CLI:
+mysql -u your_username -p your_database_name < path/to/database_file.sql
+**Note**: Ensure your database credentials in the app match your MySQL configuration.
+
+### 5. Run the App
+python main.py
